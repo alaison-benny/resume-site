@@ -296,9 +296,9 @@ body.solonick-theme {
     flex: 1;
     background-color: var(--bg-pure-dark);
     background-image: url('profile.jpg');
-    background-size: 110%;
-    /* Zoom in slightly */
-    background-position: center top;
+    background-size: 135%;
+    /* Zoomed in more to crop out borders */
+    background-position: center 10%;
     position: relative;
 }
 
