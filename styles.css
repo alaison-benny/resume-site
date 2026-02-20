@@ -7,9 +7,12 @@
 }
 
 :root {
-    --bg-dark: #292929;
-    --bg-darker: #222222;
-    --bg-pure-dark: #1b1b1b;
+    --bg-dark: #8b0000;
+    /* Deep Red */
+    --bg-darker: #5c0000;
+    /* Darker Red */
+    --bg-pure-dark: #3e0000;
+    /* Pure Dark Red */
     --accent-yellow: #f4d03f;
     --accent-hover: #d4b534;
     --text-light: #ffffff;
@@ -291,9 +294,10 @@ body.solonick-theme {
 
 .hero-right {
     flex: 1;
-    background-color: #000;
+    background-color: var(--bg-pure-dark);
     background-image: url('profile.jpg');
-    background-size: cover;
+    background-size: 110%;
+    /* Zoom in slightly */
     background-position: center top;
     position: relative;
 }
@@ -304,7 +308,8 @@ body.solonick-theme {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(41, 41, 41, 1) 0%, rgba(41, 41, 41, 0.3) 40%, rgba(0, 0, 0, 0) 100%);
+    /* Removed the dark border gradient covering the left side of the image */
+    background: transparent;
 }
 
 /* Base Content Sections */
